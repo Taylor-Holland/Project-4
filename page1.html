@@ -11,7 +11,7 @@
           left:0;
           position: fixed;
           width:100%;
-          height: 200px;
+          height: 250px;
           box-sizing: border-box;
           overflow: hidden;
           }
@@ -27,6 +27,8 @@
             }
 
             body {
+              color: #004d26;
+              font-size: 20px;
               font-family: helvetica;
               margin:0;
               height:100%;
@@ -61,6 +63,9 @@
 
                 p {float: left;}
 
+                a {color: inherit;
+                text-decoration: none;}
+
                     h1.Header_Text {
                       position: absolute;
                       margin: 0;
@@ -91,6 +96,8 @@
 
                                 input[type=text] {
                                 width: 160px;
+                                float: right;
+                                text-align: right
                                 box-sizing: border-box;
                                 border: 2px solid #ccc;
                                 border-radius: 4px;
@@ -106,22 +113,53 @@
                                   input[type=text]:focus {
                                     width: 200%;
                                     }
+
+                                    ul {
+                              list-style-type: none;
+                              margin: 0;
+                              padding: 0;
+                              overflow: hidden;
+                              background-color: #333;
+                          }
+
+                          li {
+                              float: left;
+                          }
+
+                          li a {
+                              display: block;
+                              color: white;
+                              text-align: center;
+                              padding: 14px 16px;
+                              text-decoration: none;
+                          }
+
+                          li a:hover {
+                              background-color: #111;
+                          }
                 </style>
 
         </head>
-          <body background="Images/Background_Image.jpg">
-            <div class="container">
-              <div class="header">
-                <form style="
-                  position: absolute;">
-                    <input type="text" name="search" placeholder="Search..">
-                  </form>
+        <body background="Images/Background_Image.jpg">
 
-                <h1 class="Header_Text">Handi-Pet Adoption</h1>
+          <div class="container">
+            <div class="header">
+              <form style="
+                position: absolute; right:0;">
+                  <input type="text" name="search" placeholder="Search..">
+                </form>
+                        <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="page1.html">Dogs</a></li>
+                <li><a href="page2.html">Cats</a></li>
+                <li><a href="page3.html">Donate</a></li>
+              </ul>
 
-                <img class="Header_Image" src="Images/Title_Image_WireFrame.png"/>
+              <h1 class="Header_Text"><a href="index.html">Handi-Pet Adoption</a></h1>
 
-              </div>
+              <img class="Header_Image" src="Images/Title_Image_WireFrame.png"/>
+
+            </div>
 
 
     <center>
@@ -133,38 +171,25 @@
       </center>
 
         <p> <img class="Dog_cropped1" src="Images/Dog_Cropped1.png"/>
-
-        <ul>
-          <li> I love kids </li>
-          <li> I am 3 years old </li>
-          <li> I love to cuddle </li>
-          <li> I love playing fetch </li>
-        </ul>
-          </p>
+           I am a loving dog that really loves kids.
+          I am 3 years old with a bunch of energy and that loves to play fetch but that doesn't
+          mean That I can't cuddle up next to you. If you want to adopt me, call or text 555-555-5551.
+        </p>
 
             <center>
         <h2> I am Cookie! Bark! </h2>
         </center>
           <p><img class="Dog_cropped2" src="Images/Dog_Cropped2.png"/>
-
-            <ul>
-              <li> I am very loyal </li>
-              <li> I love chicken </li>
-              <li> I have a little touble with long walks </li>
-              <li> I will love you unconditionally </li>
-            </ul>
+              I am  very loyal dog but becareful where you put your chicken because I might get it! I love playing but I have a hard time walking for very long. If you want a loyal companion that will love you unconditionally, call or text 555-555-5552
             </p>
+
+            <center>
               <h2> I am Peanut and I love you! </h2>
+            </center>
+
               <p><img class="Dog_cropped3" src="Images/Dog_Cropped3.png"/>
-
-                <ul>
-                  <li> I take some time to warm up to people but when I do, I will love you! </li>
-                  <li> I get along with other cats and dogs </li>
-                  <li> I love swimming </li>
-                  <li> I love to have my belly rubbed </li>
-                </ul>
-
-                </p>
+                I take some time to warm up to people but that is only because I am pretty shy but when I do warm up to you, I will never stop loving you! I even get along with other pets, even cats! I love to swim and get my belly rubbed so if that is something you want, call or text 555-555-5553.
+                  </p>
 
   </body
 </html>
