@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Handi-Pet Adoption-Cats</title>
+    <title>Handi-Pet Adoption-Donations </title>
 
         <style>
 
@@ -99,7 +99,6 @@
                               border-radius: 4px;
                               font-size: 16px;
                               background-color: white;
-                              background-image: url('searchicon.png');
                               background-repeat: no-repeat;
                               padding: 12px 20px 12px 40px;
                               -webkit-transition: width 0.4s ease-in-out;
@@ -107,7 +106,7 @@
                               }
 
                                 input[type=text]:focus {
-                                  width: 200%;
+                                  width: 50%;
                                   }
 
                             ul {
@@ -134,7 +133,24 @@
                       background-color: #111;
                   }
 
+                  #FormArea form{
+                    padding: 20px;
+                  }
 
+                  #FormArea input {
+                    padding: 4px;
+                    font-size: 1.5em;
+                    font-family: "Arial", sans-serrif;
+                  }
+
+                  #FormArea input[type="text"] {
+                    color: #ffffff;
+                  }
+                  #FormArea input[type="submit"] {
+                    background-color:  #ffffff;
+                    color: #ffffff;
+                    border: none;
+                  }
               </style>
 
   </head>
@@ -142,9 +158,10 @@
   <body background="Images/Background_Image.jpg">
     <div class="container">
       <div class="header">
-        <form style="
-          position: absolute; right:0;">
-            <input type="text" name="search" placeholder="Search..">
+        <form style="position: absolute; right:0;" class="" action="https://www.google.com/maps" method="GET">
+          <label for="q"> Find a pet near you! Put in your address</label>
+          <input type="text" name="q">
+          <input type="submit" value="Submit">
           </form>
                     <ul>
             <li><a class="active" href="index.html">Home</a></li>
@@ -173,11 +190,17 @@
         Biscuit tail pet supplies chow litter toys yawn aquarium dog field ferret
          scratch heel polydactyl.
 
+
       </p>
+
+      <div id="FormArea">
+        <div class="container_2">
+
 
         <center>
           <div class="button">
-          <h3 class="Donate_Link"> <a href="http://hpets.org"> Click Here To Donate
+          <h3 class="Donate_Link"> <a href="http://hpets.org">
+            Click Here To Donate
           </a>
           </h3>
          </div>
